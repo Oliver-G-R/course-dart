@@ -10,6 +10,13 @@ main(){
   */
   var notDefinedDataType = 8;
 
+  //#Constantes
+  /*
+    Las constantes no pueden cambiar su valor.
+  */
+  const double pi = 3.1416;
+
+
   //#Enteros y decimales
   double score = 10.23; //  decimal
   int age = 19; // entero
