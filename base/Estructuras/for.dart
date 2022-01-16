@@ -33,7 +33,7 @@ main() {
       print('Acceso concedido');
       break; //detiene el bucle
     } else {
-      print('Aceso Denegado');
+      print('Acceso Denegado');
     }
   }
 }
