@@ -35,6 +35,22 @@ class User {
   // Se le da un nombre distinto al constructor
   User.UserAdmin(this.name, this.email, this.password, this.authCode);
 
+  /*
+    factory es una palabra reservada que permite retornar una instancia de la clase 
+    mediante otro constructor o una instancia ya creada.
+
+    Dentro de esto se puede hacer ciertas validaciones antes de retornar la instancia.
+  */
+
+  factory User.role(
+      String name, String email, String password, String authCode) {
+    if (authCode == 'admin') {
+      return User.UserAdmin(name, email, password, authCode);
+    } else {
+      return User(name, email, password);
+    }
+  }
+
   // métodos
   String welcomeMessage() => 'Welcome $name';
 
